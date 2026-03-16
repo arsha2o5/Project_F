@@ -11,9 +11,13 @@ git clone https://github.com/yourname/project_f.git
 
 npm install
 
-# Important details: if you have a Macbook and an iPhone you can run "npm run ios"(you'll need Xcode for this), if you have a windows laptop and an android phone you run "npm run android", and in my case I have a windows latop and an iPhone for that use the command given below.
 3. Start Expo (This starts the local expo server that runs the mobile app. Make sure to download Expo Go from appstore and scan the QR code in the terminal to open the app on your phone)
+Important details: if you have a Macbook and an iPhone you can run "npm run ios"(you'll need Xcode for this), if you have a windows laptop and an android phone you run "npm run android", and in my case I have a windows latop and an iPhone for that use the command given below.
 
+npm run ios
+   or
+npm run android
+   or
 npx expo start
 
 4. Have fun
