@@ -1,6 +1,24 @@
 # Project_F
 Mobile app where you take care of your pet by taking care of yourself.
 
+## Git: instructions on how to push your changes and manage your branches.
+
+- Clone repo
+
+`git clone URL`
+
+- Create branch
+
+`git checkout -b feature-name`
+
+- Push branch
+
+`git push origin feature-name`
+
+- Pull latest code
+
+`git pull origin main`
+
 ## Setup (working in the terminal, you will need to isntal git, node.js and expo if you don't have them already)
 
 1. Clone repo
