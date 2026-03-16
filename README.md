@@ -15,7 +15,7 @@ Mobile app where you take care of your pet by taking care of yourself.
 
 `git push origin feature-name`
 
-- Pull latest code
+- Pull latest code (This is **NOT** the same thing as a Pull Request. This takes the code from the specified branch, in this case *main*, and merges it into your local branch on your computer. This is used so that you keep your branch up to date with the *main* changes)
 
 `git pull origin main`
 
