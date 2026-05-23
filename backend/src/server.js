@@ -1,17 +1,16 @@
-const express = require("express");
-const cors = require("cors");
-require("dotenv").config();
+import express, { json } from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
-const useRouter = require("./routes/user");
-app.use("/api/users", useRouter);
 
 // Middleware
 app.use(cors());
-app.use(express.json());
+app.use(json());
 
-// Test route
-
+import userRoutes from "./routes/user.js";
+app.use("/user/", userRoutes);
 
 // Port
 const PORT = process.env.PORT;

@@ -1,11 +1,22 @@
-const express = require("express");
-const cors = require("cors");
-require("dotenv").config();
+import { Router } from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
 
-const router = express.Router();
+const router = Router();
 
-const { getUsers } = require("../controllers/userControls");
+import { getUsers } from "../controllers/userControls.js";
+import { getUserById } from "../controllers/userControls.js";
+import { getUserPets } from "../controllers/userControls.js";
+import { postUser } from "../controllers/userControls.js";
 
 router.get("/", getUsers);
 
-module.exports = router;
+router.post("/", postUser);
+
+router.get("/:id", getUserById);
+
+router.get("/:id/pets", getUserPets);
+
+
+export default router;

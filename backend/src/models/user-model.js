@@ -1,11 +1,11 @@
-const db = require("../config/db");
+import { execute } from "../config/db.js";
 
 const createUser = async (username, email, password) => {
-  const [result] = await db.execute(
+  const [result] = await execute(
     "INSERT INTO users (username, email, password) VALUES (?, ?, ?)",
     [username, email, password]
   );
   return result;
 };
 
-module.exports = { createUser };
+export default { createUser };
