@@ -1,17 +1,23 @@
-const express = require("express");
-const cors = require("cors");
-require("dotenv").config();
+import express, { json } from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
-const useRouter = require("./routes/user");
-app.use("/api/users", useRouter);
 
 // Middleware
 app.use(cors());
-app.use(express.json());
+app.use(json());
 
-// Test route
+import userRoutes from "./routes/user.js";
+import wellnessRoutes from "./routes/wellness.js";
+import authRoutes from "./routes/auth.js";
+import aiRoutes from "./routes/AI.js"
 
+app.use("/user/", userRoutes);
+app.use("/auth/", authRoutes);
+app.use("/wellness/", wellnessRoutes);
+app.use("/", aiRoutes);
 
 // Port
 const PORT = process.env.PORT;
