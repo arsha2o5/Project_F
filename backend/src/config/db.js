@@ -4,10 +4,10 @@ dotenv.config();
 
 // Create a connection pool to the MySQL database
 const db = createPool({
-    host: process.env.DBHost,
-    user: process.env.DBUser,
-    password: process.env.DBPassword,
-    database: process.env.DBName,
+    host: process.env.DBHOST,
+    user: process.env.DBUSER,
+    password: process.env.DBPASSWORD,
+    database: process.env.DBNAME,
 });
 
 
