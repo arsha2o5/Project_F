@@ -10,7 +10,14 @@ app.use(cors());
 app.use(json());
 
 import userRoutes from "./routes/user.js";
+import wellnessRoutes from "./routes/wellness.js";
+import authRoutes from "./routes/auth.js";
+import aiRoutes from "./routes/AI.js"
+
 app.use("/user/", userRoutes);
+app.use("/auth/", authRoutes);
+app.use("/wellness/", wellnessRoutes);
+app.use("/", aiRoutes);
 
 // Port
 const PORT = process.env.PORT;
