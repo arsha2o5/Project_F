@@ -1,55 +1,128 @@
-# Project_F
-Mobile app where you take care of your pet by taking care of yourself.
+# 🐶 Furness
 
-## Git: instructions on how to push your changes and manage your branches.
+A full-stack mobile wellness application where taking care of yourself takes care of your virtual pet.
 
-- Clone repo
+Furness transforms everyday healthy habits into a Tamagotchi-style experience. Logging meals, water intake, and sleep directly affects your pet's wellbeing, encouraging users to build healthier routines through gamification.
 
-`git clone URL`
+🎥 **Demo Video:** *https://youtube.com/shorts/WqnW-qGLUe4?feature=share*
 
-- Create branch
+---
+## 📸 Screenshots
 
-`git checkout -b feature-name`
+<table>
+  <tr>
+    <td align="center">
+      <img src="App_Demo/HabitatScreen.PNG" width="220"><br>
+      <b>Habitat</b>
+    </td>
+    <td align="center">
+      <img src="App_Demo/InfoPanel.PNG" width="220"><br>
+      <b>Info Panel</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="App_Demo/LogInScreen.PNG" width="220"><br>
+      <b>Login</b>
+    </td>
+    <td align="center">
+      <img src="App_Demo/SignUpScreen.PNG" width="220"><br>
+      <b>Sign Up</b>
+    </td>
+  </tr>
+</table>
 
-- Push branch
+## Features
 
-`git push origin feature-name`
+* 🔐 Secure user authentication with encrypted passwords
+* 📧 Email verification and account creation
+* 🐶 Virtual pet with real-time state changes
+* 🍽️ Food, water, and sleep tracking
+* ⏳ Time-based stat decay system for realistic gameplay
+* 🤖 AI-powered meal analysis using the OpenAI API
+* 💾 Automatic synchronization between local storage and a MySQL database
+* 🌐 RESTful Express.js backend
+* 🐳 Dockerized backend and MySQL database for one-command setup
 
-- Pull latest code (This is **NOT** the same thing as a Pull Request. This takes the code from the specified branch, in this case *main*, and merges it into your local branch on your computer. This is used so that you keep your branch up to date with the *main* changes)
+---
 
-`git pull origin main`
+## Tech Stack
 
-## Setup (working in the terminal, you will need to isntal git, node.js and expo if you don't have them already)
+**Frontend**
 
-1. Clone repo
+* React Native
+* Expo
+* TypeScript
 
-git clone https://github.com/yourname/project_f.git
+**Backend**
 
-2. Install dependencies (this installs files that do not get pushed into the repo to save up on the memory usage. All the files not pushed into the repo are defined in the gitignore file)
+* Node.js
+* Express.js
+* JWT Authentication
+* bcrypt
 
-`npm install`
+**Database**
 
-3. Start Expo (This starts the local expo server that runs the mobile app. Make sure to download Expo Go from appstore and scan the QR code in the terminal to open the app on your phone)
-*Important details: if you have a Macbook and an iPhone you can run "npm run ios"(you'll need Xcode for this), if you have a windows laptop and an android phone you run "npm run android", and in my case I have a windows latop and an iPhone for that use the command given below.*
+* MySQL
 
-- `npm run ios`
+**Infrastructure**
 
-    or
+* Docker
+* Docker Compose
 
-- `npm run android`
+**AI**
 
-    or
+* OpenAI API
 
-- `npx expo start`
+---
 
-4. The project should look like this in vscode
+## Running the Project
+
+### Backend
+
+Start the backend server and MySQL database using Docker:
+
+```bash
+docker compose up --build
 ```
-Project_F
-├── app
-├── assets
-├── components
-├── package.json
-└── README.md
-``` 
 
-4. Have fun
+### Frontend
+
+```bash
+npm install
+npx expo start
+```
+
+Scan the generated QR code using **Expo Go**, or launch the project using an Android emulator or iOS simulator.
+
+---
+
+## Repository Workflow
+
+Create a feature branch before making changes:
+
+```bash
+git checkout -b feature-name
+```
+
+Push your branch:
+
+```bash
+git push origin feature-name
+```
+
+Keep your branch up to date:
+
+```bash
+git pull origin main
+```
+
+---
+
+## Future Improvements
+
+* Interactive pet animations
+* Pet customization
+* Push notifications and reminders
+* Cloud deployment
+* Social features and leaderboards

@@ -1,13 +1,13 @@
 import db from "../config/db.js";
 import bcrypt from "bcrypt";
 export async function getUsers(req, res) {
-  const [rows] = await db.query("SELECT * FROM USERS");
+  const [rows] = await db.query("SELECT * FROM users");
   res.json(rows);
 }
 
 export async function getUserById(req, res) {
   const userId = req.params.id;
-  const [rows] = await db.query("SELECT * FROM USERS WHERE id = ?", [userId]);
+  const [rows] = await db.query("SELECT * FROM users WHERE id = ?", [userId]);
   res.json(rows[0]);
 }
 
