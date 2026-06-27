@@ -1,12 +1,36 @@
-# 🐶 Project_F
+# 🐶 Furness
 
 A full-stack mobile wellness application where taking care of yourself takes care of your virtual pet.
 
-Project_F transforms everyday healthy habits into a Tamagotchi-style experience. Logging meals, water intake, and sleep directly affects your pet's wellbeing, encouraging users to build healthier routines through gamification.
+Furness transforms everyday healthy habits into a Tamagotchi-style experience. Logging meals, water intake, and sleep directly affects your pet's wellbeing, encouraging users to build healthier routines through gamification.
 
 🎥 **Demo Video:** *https://youtube.com/shorts/WqnW-qGLUe4?feature=share*
 
 ---
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="App_Demo/HabitatScreen.png" width="220"><br>
+      <b>Habitat</b>
+    </td>
+    <td align="center">
+      <img src="App_Demo/InfoPanel.png" width="220"><br>
+      <b>Info Panel</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="App_Demo/LogInScreen.png" width="220"><br>
+      <b>Login</b>
+    </td>
+    <td align="center">
+      <img src="App_Demo/SignUpScreen.png" width="220"><br>
+      <b>Sign Up</b>
+    </td>
+  </tr>
+</table>
 
 ## Features
 
