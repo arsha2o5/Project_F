@@ -1,55 +1,104 @@
-# Project_F
-Mobile app where you take care of your pet by taking care of yourself.
+# 🐶 Project_F
 
-## Git: instructions on how to push your changes and manage your branches.
+A full-stack mobile wellness application where taking care of yourself takes care of your virtual pet.
 
-- Clone repo
+Project_F transforms everyday healthy habits into a Tamagotchi-style experience. Logging meals, water intake, and sleep directly affects your pet's wellbeing, encouraging users to build healthier routines through gamification.
 
-`git clone URL`
+🎥 **Demo Video:** *https://youtube.com/shorts/WqnW-qGLUe4?feature=share*
 
-- Create branch
+---
 
-`git checkout -b feature-name`
+## Features
 
-- Push branch
+* 🔐 Secure user authentication with encrypted passwords
+* 📧 Email verification and account creation
+* 🐶 Virtual pet with real-time state changes
+* 🍽️ Food, water, and sleep tracking
+* ⏳ Time-based stat decay system for realistic gameplay
+* 🤖 AI-powered meal analysis using the OpenAI API
+* 💾 Automatic synchronization between local storage and a MySQL database
+* 🌐 RESTful Express.js backend
+* 🐳 Dockerized backend and MySQL database for one-command setup
 
-`git push origin feature-name`
+---
 
-- Pull latest code (This is **NOT** the same thing as a Pull Request. This takes the code from the specified branch, in this case *main*, and merges it into your local branch on your computer. This is used so that you keep your branch up to date with the *main* changes)
+## Tech Stack
 
-`git pull origin main`
+**Frontend**
 
-## Setup (working in the terminal, you will need to isntal git, node.js and expo if you don't have them already)
+* React Native
+* Expo
+* TypeScript
 
-1. Clone repo
+**Backend**
 
-git clone https://github.com/yourname/project_f.git
+* Node.js
+* Express.js
+* JWT Authentication
+* bcrypt
 
-2. Install dependencies (this installs files that do not get pushed into the repo to save up on the memory usage. All the files not pushed into the repo are defined in the gitignore file)
+**Database**
 
-`npm install`
+* MySQL
 
-3. Start Expo (This starts the local expo server that runs the mobile app. Make sure to download Expo Go from appstore and scan the QR code in the terminal to open the app on your phone)
-*Important details: if you have a Macbook and an iPhone you can run "npm run ios"(you'll need Xcode for this), if you have a windows laptop and an android phone you run "npm run android", and in my case I have a windows latop and an iPhone for that use the command given below.*
+**Infrastructure**
 
-- `npm run ios`
+* Docker
+* Docker Compose
 
-    or
+**AI**
 
-- `npm run android`
+* OpenAI API
 
-    or
+---
 
-- `npx expo start`
+## Running the Project
 
-4. The project should look like this in vscode
+### Backend
+
+Start the backend server and MySQL database using Docker:
+
+```bash
+docker compose up --build
 ```
-Project_F
-├── app
-├── assets
-├── components
-├── package.json
-└── README.md
-``` 
 
-4. Have fun
+### Frontend
+
+```bash
+npm install
+npx expo start
+```
+
+Scan the generated QR code using **Expo Go**, or launch the project using an Android emulator or iOS simulator.
+
+---
+
+## Repository Workflow
+
+Create a feature branch before making changes:
+
+```bash
+git checkout -b feature-name
+```
+
+Push your branch:
+
+```bash
+git push origin feature-name
+```
+
+Keep your branch up to date:
+
+```bash
+git pull origin main
+```
+
+---
+
+## Future Improvements
+
+* Interactive pet animations
+* Pet customization
+* Push notifications and reminders
+* Cloud deployment
+* Social features and leaderboards
