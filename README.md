@@ -12,21 +12,21 @@ Furness transforms everyday healthy habits into a Tamagotchi-style experience. L
 <table>
   <tr>
     <td align="center">
-      <img src="App_Demo/HabitatScreen.png" width="220"><br>
+      <img src="App_Demo/HabitatScreen.PNG" width="220"><br>
       <b>Habitat</b>
     </td>
     <td align="center">
-      <img src="App_Demo/InfoPanel.png" width="220"><br>
+      <img src="App_Demo/InfoPanel.PNG" width="220"><br>
       <b>Info Panel</b>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="App_Demo/LogInScreen.png" width="220"><br>
+      <img src="App_Demo/LogInScreen.PNG" width="220"><br>
       <b>Login</b>
     </td>
     <td align="center">
-      <img src="App_Demo/SignUpScreen.png" width="220"><br>
+      <img src="App_Demo/SignUpScreen.PNG" width="220"><br>
       <b>Sign Up</b>
     </td>
   </tr>
