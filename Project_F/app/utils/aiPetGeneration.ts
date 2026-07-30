@@ -27,7 +27,7 @@ export const sendPictureToServer = async (image: string): Promise<GeneratedPetIm
         throw new Error("Login required")
     }
 
-    const response = await fetch("http://192.168.1.78:5000/aiGeneratePet", {
+    const response = await fetch("http://ec2-18-144-66-250.us-west-1.compute.amazonaws.com:5000/aiGeneratePet", {
         method: "POST",
         body: formData,
         headers: {

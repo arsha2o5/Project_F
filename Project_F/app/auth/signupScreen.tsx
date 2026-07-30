@@ -41,7 +41,7 @@ export default function SignUpScreen() {
         }
         try {
 		const response = await fetch(
-            "http://192.168.1.78:5000/user",
+            "http://ec2-18-144-66-250.us-west-1.compute.amazonaws.com:5000/user",
             {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },

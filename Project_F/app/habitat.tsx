@@ -193,7 +193,7 @@ export default function HabitatScreen() {
   const createTestUser = async () => {
   try {
     const response = await fetch(
-      "http://192.168.1.78:5000/user",
+      "http://ec2-18-144-66-250.us-west-1.compute.amazonaws.com:5000/user",
       {
         method: "POST",
         headers: {
@@ -219,7 +219,7 @@ export default function HabitatScreen() {
   // Test wellness_data sync function
   const testSync = async () => {
     const response = await fetch(
-        "http://192.168.1.78:5000/wellness/updateWellness/1",
+        "http://ec2-18-144-66-250.us-west-1.compute.amazonaws.com:5000/wellness/updateWellness/1",
         {
             method: "PUT",
             headers: {
@@ -317,7 +317,7 @@ export default function HabitatScreen() {
       return null;
     }
 
-    const res = await fetch(`http://192.168.1.78:5000/pet/${userId}`, {
+    const res = await fetch(`http://ec2-18-144-66-250.us-west-1.compute.amazonaws.com:5000/pet/${userId}`, {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -474,6 +474,7 @@ export default function HabitatScreen() {
     setPetStats(updatedStats);
     await savePetStats(updatedStats);
   }
+  console.log(petImages?.neutral);
   // FILL WATER BAR ANIMATION
   useEffect(() => {
     waterFillWidth.value = withTiming((waterPercent / 100) * waterButtonWidth, {
