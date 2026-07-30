@@ -1,6 +1,6 @@
 export async function analyzeMeal(meal: String) {
     try {
-        const response = await fetch("http://192.168.1.78:5000/aiFoodCalc", {
+        const response = await fetch("http://ec2-18-144-66-250.us-west-1.compute.amazonaws.com:5000/aiFoodCalc", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

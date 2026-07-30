@@ -20,7 +20,7 @@ export default function LoginScreen() {
 
 	const handleLogin = async () => {
 		const response = await fetch(
-        "http://192.168.1.78:5000/auth/login",
+        "http://ec2-18-144-66-250.us-west-1.compute.amazonaws.com:5000/auth/login",
         {
             method: "POST",
             headers: { "Content-Type": "application/json" },

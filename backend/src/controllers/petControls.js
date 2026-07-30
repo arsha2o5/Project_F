@@ -18,9 +18,9 @@ export async function getPetByID(req, res){
     const pet = rows[0];
 
     res.json({
-        neutral: `http://192.168.1.78:5000${pet.neutral_image}`,
-        happy: `http://192.168.1.78:5000${pet.happy_image}`,
-        sad: `http://192.168.1.78:5000${pet.sad_image}`
+        neutral: `http://ec2-18-144-66-250.us-west-1.compute.amazonaws.com:5000${pet.neutral_image}`,
+        happy: `http://ec2-18-144-66-250.us-west-1.compute.amazonaws.com:5000${pet.happy_image}`,
+        sad: `http://ec2-18-144-66-250.us-west-1.compute.amazonaws.com:5000${pet.sad_image}`
     });
 };
 

@@ -16,7 +16,7 @@ export const defaultPetStats: PetStats = {
 
 export const loadServerWellness = async () => {
     const token = await AsyncStorage.getItem("auth_token");
-    const response = await fetch("http://192.168.1.78:5000/wellness/getWellnessById", {
+    const response = await fetch("http://ec2-18-144-66-250.us-west-1.compute.amazonaws.com:5000/wellness/getWellnessById", {
         headers: {
             Authorization: `Bearer ${token}`,
         },
