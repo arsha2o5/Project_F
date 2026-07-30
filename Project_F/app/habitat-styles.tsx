@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
         position: "absolute",
         width: "100%",
         height: "100%",
-        transform: [{translateY: 40}, {scale: 1.2}],
+        // transform: [{translateY: 40}, {scale: 1.2}],
         zIndex: 1
       },
       dogNeutral: {
@@ -45,7 +45,7 @@ export const styles = StyleSheet.create({
       },
       petShadow: {
         position: "absolute",
-        top: "80%",
+        top: "60%",
         left: "10%",
         width: 100,
         height: 50,
@@ -684,4 +684,54 @@ export const styles = StyleSheet.create({
         fontWeight: "800",
         color: "#263033",
       },
+      overlay: {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        zIndex: 999,
+        alignItems: "center",
+        justifyContent: "flex-end",
+      },
+
+      statePicker: {
+        position: "absolute",
+        top: "12%",
+        right: "18.5%",
+        borderRadius: 20,
+        borderColor: "#ffffffd5",
+        borderCurve: "continuous",
+        borderWidth: 2,
+        overflow: "hidden"
+      },
+      stateOption: {
+        fontSize: 15,
+        borderBottomColor: "#ffffff86",
+        borderBottomWidth: 1,
+        padding: 10,
+        justifyContent: "center",
+        paddingHorizontal: 16,
+      },
+      sheet: {
+        width: "90%",
+        height: "25%",
+        borderRadius: 20,
+        borderColor: "#ffffffd5",
+        borderCurve: "continuous",
+        borderWidth: 2,
+        overflow: "hidden",
+        elevation: 20,
+      },
+      slider:{
+        width: "80%",
+        alignSelf: "center",
+        marginTop: 5,
+      },
+      sliderLabel: {
+        textAlign: "center",
+        fontSize: 12,
+        fontWeight: "bold",
+        color: "#302b24"
+      }
 }) 

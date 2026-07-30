@@ -41,6 +41,13 @@ export async function postUser(req, res) {
     `,
     [userId]
   );
+  await db.execute(
+    `
+    INSERT INTO pets (user_id, neutral_image, happy_image, sad_image)
+    VALUES (?, ?, ?, ?)
+    `,
+    [userId, "/uploads/defaults/neutral.png", "/uploads/defaults/happy.png", "/uploads/defaults/sad.png"]
+  );
 
   res.status(201).json({
     id: userId,
