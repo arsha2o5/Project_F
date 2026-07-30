@@ -49,9 +49,9 @@ export function applyDecay(stats: PetStats): PetStats {
   const hoursPassed = Math.max(0, (now - last) / (1000 * 60 * 60));
 
   return {
-    hunger: clamp(stats.hunger - hoursPassed * 4.1),
-    hydration: Math.min(Math.max((stats.hydration - hoursPassed * 83.3), 0), 2000),
-    energy: clamp(stats.energy - hoursPassed * 6.25),
+    hunger: clamp(stats.hunger - hoursPassed * 5554.1),
+    hydration: Math.min(Math.max((stats.hydration - hoursPassed * 55583.3), 0), 2000),
+    energy: clamp(stats.energy - hoursPassed * 5556.25),
     lastUpdatedAt: new Date(now).toISOString(),
   };
 }

@@ -9,7 +9,7 @@ export const verifyToken = (req, res, next) => {
   if (!token) {
     return res.status(401).json({ error: "Access denied. No token provided." });
   }
-
+  console.log("middleware reached")
   try {
     // 3. Verify the token using your .env secret
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
@@ -18,6 +18,7 @@ export const verifyToken = (req, res, next) => {
     req.user = decoded;
 
     // 5. Let them through to the actual controller!
+    console.log("middleware finished")
     next(); 
 
   } catch (error) {

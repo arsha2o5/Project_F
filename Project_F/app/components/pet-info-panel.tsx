@@ -36,7 +36,7 @@ type PetInfoPanelProps = {
   activityMinutesInput: string;
   setActivityMinutesInput: (value: string) => void;
   submitEnergyBalance: () => void;
-    setPetImage?: (imageName: string) => void;
+  setPetState?: (state: string) => void;
 };
 
 export function PetInfoPanel({
@@ -62,7 +62,7 @@ export function PetInfoPanel({
   activityMinutesInput,
   setActivityMinutesInput,
   submitEnergyBalance,
-    setPetImage,
+  setPetState,
 }: PetInfoPanelProps) {
     // Compute per-metric influence scores (0-100 scale)
     // Hunger: best at 50 -> 100 points. Linear falloff to 0 at 0 and 100.
@@ -88,8 +88,8 @@ export function PetInfoPanel({
     const overallStateLabel = overallStateKey === "sad" ? "Sad" : overallStateKey === "neutral" ? "Neutral" : "Happy";
 
     useEffect(() => {
-        if (setPetImage) setPetImage(`Ellie_${overallStateKey}`);
-    }, [overallStateKey, setPetImage]);
+        if (setPetState) setPetState(overallStateKey);
+    }, [overallStateKey, setPetState]);
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
         <Text style={styles.taskMenuTitle}>Info Panel</Text>
